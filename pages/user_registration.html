@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account - EduLearn Platform</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fedulearnp3259back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-surface min-h-screen">
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm border-b border-secondary-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="course_catalog.html" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-white text-sm"></i>
+                        </div>
+                        <span class="text-xl font-semibold text-text-primary">EduLearn</span>
+                    </a>
+                </div>
+                
+                <!-- Login Link -->
+                <div class="flex items-center">
+                    <span class="text-sm text-text-secondary mr-2">Already have an account?</span>
+                    <a href="user_login.html" class="text-primary hover:text-primary-700 font-medium text-sm transition-smooth">
+                        Sign In
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 py-8 lg:py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+                <!-- Welcome Panel (Desktop Only) -->
+                <div class="hidden lg:block">
+                    <div class="max-w-md">
+                        <h1 class="text-4xl font-bold text-text-primary mb-6">
+                            Join thousands of learners worldwide
+                        </h1>
+                        <p class="text-lg text-text-secondary mb-8">
+                            Start your learning journey today with access to premium courses, expert instructors, and a supportive community.
+                        </p>
+                        
+                        <!-- Benefits List -->
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-success-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-success-600 text-xs"></i>
+                                </div>
+                                <span class="text-text-secondary">Access to 1000+ premium courses</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-success-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-success-600 text-xs"></i>
+                                </div>
+                                <span class="text-text-secondary">Learn from industry experts</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-success-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-success-600 text-xs"></i>
+                                </div>
+                                <span class="text-text-secondary">Get certificates upon completion</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-success-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-success-600 text-xs"></i>
+                                </div>
+                                <span class="text-text-secondary">Join a community of learners</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Registration Form -->
+                <div class="max-w-md mx-auto lg:mx-0">
+                    <!-- Mobile Header -->
+                    <div class="text-center mb-8 lg:hidden">
+                        <h1 class="text-2xl font-bold text-text-primary mb-2">Create Your Account</h1>
+                        <p class="text-text-secondary">Join thousands of learners worldwide</p>
+                    </div>
+
+                    <!-- Desktop Header -->
+                    <div class="hidden lg:block text-center mb-8">
+                        <h2 class="text-2xl font-bold text-text-primary mb-2">Create Your Account</h2>
+                        <p class="text-text-secondary">Get started with your learning journey</p>
+                    </div>
+
+                    <!-- Social Registration -->
+                    <div class="space-y-3 mb-6">
+                        <button type="button" class="w-full flex items-center justify-center px-4 py-3 border border-secondary-300 rounded-educational bg-white hover:bg-secondary-50 transition-smooth">
+                            <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google" class="w-5 h-5 mr-3" />
+                            <span class="text-sm font-medium text-text-primary">Continue with Google</span>
+                        </button>
+                        <button type="button" class="w-full flex items-center justify-center px-4 py-3 border border-secondary-300 rounded-educational bg-white hover:bg-secondary-50 transition-smooth">
+                            <i class="fab fa-linkedin text-blue-600 text-lg mr-3"></i>
+                            <span class="text-sm font-medium text-text-primary">Continue with LinkedIn</span>
+                        </button>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="relative mb-6">
+                        <div class="absolute inset-0 flex items-center">
+                            <div class="w-full border-t border-secondary-200"></div>
+                        </div>
+                        <div class="relative flex justify-center text-sm">
+                            <span class="px-2 bg-surface text-text-secondary">Or create account with email</span>
+                        </div>
+                    </div>
+
+                    <!-- Registration Form -->
+                    <form id="registrationForm" class="space-y-6">
+                        <!-- Basic Information -->
+                        <div class="space-y-4">
+                            <!-- Full Name -->
+                            <div>
+                                <label for="fullName" class="block text-sm font-medium text-text-primary mb-2">
+                                    Full Name *
+                                </label>
+                                <input type="text" id="fullName" name="fullName" required class="w-full px-3 py-2 border border-secondary-300 rounded-educational focus:ring-2 focus:ring-primary focus:border-primary transition-smooth" placeholder="Enter your full name" />
+                                <div class="mt-1 text-sm text-error-500 hidden" id="fullNameError"></div>
+                                <div class="mt-1 text-sm text-success-600 hidden" id="fullNameSuccess">
+                                    <i class="fas fa-check mr-1"></i>Looks good!
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-text-primary mb-2">
+                                    Email Address *
+                                </label>
+                                <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-secondary-300 rounded-educational focus:ring-2 focus:ring-primary focus:border-primary transition-smooth" placeholder="Enter your email address" />
+                                <div class="mt-1 text-sm text-error-500 hidden" id="emailError"></div>
+                                <div class="mt-1 text-sm text-success-600 hidden" id="emailSuccess">
+                                    <i class="fas fa-check mr-1"></i>Valid email address
+                                </div>
+                            </div>
+
+                            <!-- Password -->
+                            <div>
+                                <label for="password" class="block text-sm font-medium text-text-primary mb-2">
+                                    Password *
+                                </label>
+                                <div class="relative">
+                                    <input type="password" id="password" name="password" required class="w-full px-3 py-2 pr-10 border border-secondary-300 rounded-educational focus:ring-2 focus:ring-primary focus:border-primary transition-smooth" placeholder="Create a strong password" />
+                                    <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                                        <i class="fas fa-eye text-secondary-400 hover:text-secondary-600"></i>
+                                    </button>
+                                </div>
+                                
+                                <!-- Password Strength Indicator -->
+                                <div class="mt-2">
+                                    <div class="flex items-center space-x-2 mb-1">
+                                        <span class="text-xs text-text-secondary">Password strength:</span>
+                                        <span id="strengthText" class="text-xs font-medium text-error-500">Weak</span>
+                                    </div>
+                                    <div class="w-full bg-secondary-200 rounded-full h-1">
+                                        <div id="strengthBar" class="bg-error-500 h-1 rounded-full transition-smooth" style="width: 0%"></div>
+                                    </div>
+                                    <div class="mt-2 text-xs text-text-secondary">
+                                        <div class="grid grid-cols-2 gap-2">
+                                            <div id="lengthCheck" class="flex items-center">
+                                                <i class="fas fa-times text-error-500 mr-1"></i>
+                                                <span>8+ characters</span>
+                                            </div>
+                                            <div id="upperCheck" class="flex items-center">
+                                                <i class="fas fa-times text-error-500 mr-1"></i>
+                                                <span>Uppercase letter</span>
+                                            </div>
+                                            <div id="numberCheck" class="flex items-center">
+                                                <i class="fas fa-times text-error-500 mr-1"></i>
+                                                <span>Number</span>
+                                            </div>
+                                            <div id="specialCheck" class="flex items-center">
+                                                <i class="fas fa-times text-error-500 mr-1"></i>
+                                                <span>Special character</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Confirm Password -->
+                            <div>
+                                <label for="confirmPassword" class="block text-sm font-medium text-text-primary mb-2">
+                                    Confirm Password *
+                                </label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" required class="w-full px-3 py-2 border border-secondary-300 rounded-educational focus:ring-2 focus:ring-primary focus:border-primary transition-smooth" placeholder="Confirm your password" />
+                                <div class="mt-1 text-sm text-error-500 hidden" id="confirmPasswordError"></div>
+                                <div class="mt-1 text-sm text-success-600 hidden" id="confirmPasswordSuccess">
+                                    <i class="fas fa-check mr-1"></i>Passwords match
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- User Type Selection -->
+                        <div>
+                            <label class="block text-sm font-medium text-text-primary mb-3">
+                                I am a *
+                            </label>
+                            <div class="grid grid-cols-1 gap-3">
+                                <label class="relative flex items-center p-3 border border-secondary-300 rounded-educational cursor-pointer hover:bg-secondary-50 transition-smooth">
+                                    <input type="radio" name="userType" value="student" class="sr-only" required />
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-4 border-2 border-secondary-300 rounded-full mr-3 flex items-center justify-center">
+                                            <div class="w-2 h-2 bg-primary rounded-full hidden"></div>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <i class="fas fa-user-graduate text-primary mr-3"></i>
+                                            <div>
+                                                <div class="font-medium text-text-primary">Student</div>
+                                                <div class="text-sm text-text-secondary">Learn new skills and advance your career</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="relative flex items-center p-3 border border-secondary-300 rounded-educational cursor-pointer hover:bg-secondary-50 transition-smooth">
+                                    <input type="radio" name="userType" value="instructor" class="sr-only" />
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-4 border-2 border-secondary-300 rounded-full mr-3 flex items-center justify-center">
+                                            <div class="w-2 h-2 bg-primary rounded-full hidden"></div>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <i class="fas fa-chalkboard-teacher text-primary mr-3"></i>
+                                            <div>
+                                                <div class="font-medium text-text-primary">Instructor</div>
+                                                <div class="text-sm text-text-secondary">Share your expertise and teach others</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="relative flex items-center p-3 border border-secondary-300 rounded-educational cursor-pointer hover:bg-secondary-50 transition-smooth">
+                                    <input type="radio" name="userType" value="corporate" class="sr-only" />
+                                    <div class="flex items-center">
+                                        <div class="w-4 h-4 border-2 border-secondary-300 rounded-full mr-3 flex items-center justify-center">
+                                            <div class="w-2 h-2 bg-primary rounded-full hidden"></div>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <i class="fas fa-building text-primary mr-3"></i>
+                                            <div>
+                                                <div class="font-medium text-text-primary">Corporate Trainer</div>
+                                                <div class="text-sm text-text-secondary">Train employees and teams</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Role-specific Fields (Initially Hidden) -->
+                        <div id="instructorFields" class="space-y-4 hidden">
+                            <div>
+                                <label for="expertise" class="block text-sm font-medium text-text-primary mb-2">
+                                    Area of Expertise
+                                </label>
+                                <select id="expertise" name="expertise" class="w-full px-3 py-2 border border-secondary-300 rounded-educational focus:ring-2 focus:ring-primary focus:border-primary transition-smooth">
+                                    <option value>Select your expertise</option>
+                                    <option value="technology">Technology & Programming</option>
+                                    <option value="business">Business & Management</option>
+                                    <option value="design">Design & Creative</option>
+                                    <option value="marketing">Marketing & Sales</option>
+                                    <option value="data">Data Science & Analytics</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="experience" class="block text-sm font-medium text-text-primary mb-2">
+                                    Years of Experience
+                                </label>
+                                <select id="experience" name="experience" class="w-full px-3 py-2 border border-secondary-300 rounded-educational focus:ring-2 focus:ring-primary focus:border-primary transition-smooth">
+                                    <option value>Select experience level</option>
+                                    <option value="1-2">1-2 years</option>
+                                    <option value="3-5">3-5 years</option>
+                                    <option value="6-10">6-10 years</option>
+                                    <option value="10+">10+ years</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div id="corporateFields" class="space-y-4 hidden">
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-text-primary mb-2">
+                                    Company Name
+                                </label>
+                                <input type="text" id="company" name="company" class="w-full px-3 py-2 border border-secondary-300 rounded-educational focus:ring-2 focus:ring-primary focus:border-primary transition-smooth" placeholder="Enter your company name" />
+                            </div>
+                            <div>
+                                <label for="teamSize" class="block text-sm font-medium text-text-primary mb-2">
+                                    Team Size
+                                </label>
+                                <select id="teamSize" name="teamSize" class="w-full px-3 py-2 border border-secondary-300 rounded-educational focus:ring-2 focus:ring-primary focus:border-primary transition-smooth">
+                                    <option value>Select team size</option>
+                                    <option value="1-10">1-10 employees</option>
+                                    <option value="11-50">11-50 employees</option>
+                                    <option value="51-200">51-200 employees</option>
+                                    <option value="200+">200+ employees</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Privacy -->
+                        <div class="space-y-3">
+                            <label class="flex items-start">
+                                <input type="checkbox" id="terms" name="terms" required class="mt-1 mr-3 w-4 h-4 text-primary border-secondary-300 rounded focus:ring-primary" />
+                                <span class="text-sm text-text-secondary">
+                                    I agree to the 
+                                    <button type="button" class="text-primary hover:text-primary-700 underline" onclick="openModal('termsModal')">Terms of Service</button>
+                                    and 
+                                    <button type="button" class="text-primary hover:text-primary-700 underline" onclick="openModal('privacyModal')">Privacy Policy</button>
+                                </span>
+                            </label>
+                            
+                            <label class="flex items-start">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="mt-1 mr-3 w-4 h-4 text-primary border-secondary-300 rounded focus:ring-primary" />
+                                <span class="text-sm text-text-secondary">
+                                    I would like to receive updates about new courses and features
+                                </span>
+                            </label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" id="submitBtn" disabled class="w-full bg-secondary-300 text-white py-3 px-4 rounded-educational font-medium transition-smooth cursor-not-allowed">
+                            <span id="submitText">Create Account</span>
+                            <div id="submitSpinner" class="hidden inline-block w-4 h-4 ml-2 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                        </button>
+                    </form>
+
+                    <!-- Login Link -->
+                    <div class="mt-6 text-center">
+                        <span class="text-sm text-text-secondary">Already have an account? </span>
+                        <a href="user_login.html" class="text-primary hover:text-primary-700 font-medium text-sm transition-smooth">
+                            Sign in here
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Terms Modal -->
+    <div id="termsModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-educational-lg max-w-2xl w-full max-h-96 overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-lg font-semibold text-text-primary">Terms of Service</h3>
+                    <button type="button" onclick="closeModal('termsModal')" class="text-secondary-400 hover:text-secondary-600">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="prose prose-sm max-w-none text-text-secondary">
+                    <p>By using EduLearn Platform, you agree to these terms and conditions...</p>
+                    <p>Last updated: August 25, 2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Modal -->
+    <div id="privacyModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-educational-lg max-w-2xl w-full max-h-96 overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-lg font-semibold text-text-primary">Privacy Policy</h3>
+                    <button type="button" onclick="closeModal('privacyModal')" class="text-secondary-400 hover:text-secondary-600">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="prose prose-sm max-w-none text-text-secondary">
+                    <p>We respect your privacy and are committed to protecting your personal data...</p>
+                    <p>Last updated: August 25, 2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Email Verification Modal -->
+    <div id="verificationModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-educational-lg max-w-md w-full">
+            <div class="p-6 text-center">
+                <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-envelope text-success-600 text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-text-primary mb-2">Check Your Email</h3>
+                <p class="text-text-secondary mb-4">
+                    We've sent a verification link to your email address. Please check your inbox and click the link to activate your account.
+                </p>
+                <div class="space-y-3">
+                    <button type="button" class="w-full bg-primary hover:bg-primary-700 text-white py-2 px-4 rounded-educational font-medium transition-smooth">
+                        Resend Email
+                    </button>
+                    <button type="button" onclick="closeModal('verificationModal')" class="w-full text-text-secondary hover:text-text-primary py-2 px-4 rounded-educational font-medium transition-smooth">
+                        I'll verify later
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Form validation and interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('registrationForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const submitText = document.getElementById('submitText');
+            const submitSpinner = document.getElementById('submitSpinner');
+            
+            // Password toggle
+            const togglePassword = document.getElementById('togglePassword');
+            const passwordInput = document.getElementById('password');
+            
+            togglePassword.addEventListener('click', function() {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+                const icon = this.querySelector('i');
+                icon.classList.toggle('fa-eye');
+                icon.classList.toggle('fa-eye-slash');
+            });
+            
+            // Password strength checker
+            passwordInput.addEventListener('input', function() {
+                checkPasswordStrength(this.value);
+            });
+            
+            // User type selection
+            const userTypeRadios = document.querySelectorAll('input[name="userType"]');
+            const instructorFields = document.getElementById('instructorFields');
+            const corporateFields = document.getElementById('corporateFields');
+            
+            userTypeRadios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    // Update radio button appearance
+                    userTypeRadios.forEach(r => {
+                        const dot = r.parentElement.querySelector('.w-2');
+                        if (r.checked) {
+                            dot.classList.remove('hidden');
+                            r.parentElement.classList.add('border-primary', 'bg-primary-50');
+                        } else {
+                            dot.classList.add('hidden');
+                            r.parentElement.classList.remove('border-primary', 'bg-primary-50');
+                        }
+                    });
+                    
+                    // Show/hide role-specific fields
+                    instructorFields.classList.add('hidden');
+                    corporateFields.classList.add('hidden');
+                    
+                    if (this.value === 'instructor') {
+                        instructorFields.classList.remove('hidden');
+                    } else if (this.value === 'corporate') {
+                        corporateFields.classList.remove('hidden');
+                    }
+                });
+            });
+            
+            // Form validation
+            const inputs = form.querySelectorAll('input[required], select[required]');
+            const termsCheckbox = document.getElementById('terms');
+            
+            function validateForm() {
+                let isValid = true;
+                
+                inputs.forEach(input => {
+                    if (!input.value.trim()) {
+                        isValid = false;
+                    }
+                });
+                
+                if (!termsCheckbox.checked) {
+                    isValid = false;
+                }
+                
+                // Check password match
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+                if (password !== confirmPassword) {
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('bg-secondary-300', 'cursor-not-allowed');
+                    submitBtn.classList.add('bg-primary', 'hover:bg-primary-700', 'cursor-pointer');
+                } else {
+                    submitBtn.disabled = true;
+                    submitBtn.classList.add('bg-secondary-300', 'cursor-not-allowed');
+                    submitBtn.classList.remove('bg-primary', 'hover:bg-primary-700', 'cursor-pointer');
+                }
+            }
+            
+            // Add event listeners for validation
+            inputs.forEach(input => {
+                input.addEventListener('input', validateForm);
+                input.addEventListener('blur', function() {
+                    validateField(this);
+                });
+            });
+            
+            termsCheckbox.addEventListener('change', validateForm);
+            
+            // Confirm password validation
+            document.getElementById('confirmPassword').addEventListener('input', function() {
+                const password = document.getElementById('password').value;
+                const confirmPassword = this.value;
+                const errorDiv = document.getElementById('confirmPasswordError');
+                const successDiv = document.getElementById('confirmPasswordSuccess');
+                
+                if (confirmPassword && password !== confirmPassword) {
+                    errorDiv.textContent = 'Passwords do not match';
+                    errorDiv.classList.remove('hidden');
+                    successDiv.classList.add('hidden');
+                } else if (confirmPassword && password === confirmPassword) {
+                    errorDiv.classList.add('hidden');
+                    successDiv.classList.remove('hidden');
+                } else {
+                    errorDiv.classList.add('hidden');
+                    successDiv.classList.add('hidden');
+                }
+                validateForm();
+            });
+            
+            // Form submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show loading state
+                submitBtn.disabled = true;
+                submitText.textContent = 'Creating Account...';
+                submitSpinner.classList.remove('hidden');
+                
+                // Simulate API call
+                setTimeout(() => {
+                    submitText.textContent = 'Create Account';
+                    submitSpinner.classList.add('hidden');
+                    openModal('verificationModal');
+                }, 2000);
+            });
+        });
+        
+        function checkPasswordStrength(password) {
+            const strengthBar = document.getElementById('strengthBar');
+            const strengthText = document.getElementById('strengthText');
+            const lengthCheck = document.getElementById('lengthCheck');
+            const upperCheck = document.getElementById('upperCheck');
+            const numberCheck = document.getElementById('numberCheck');
+            const specialCheck = document.getElementById('specialCheck');
+            
+            let score = 0;
+            
+            // Check length
+            if (password.length >= 8) {
+                score++;
+                updateCheck(lengthCheck, true);
+            } else {
+                updateCheck(lengthCheck, false);
+            }
+            
+            // Check uppercase
+            if (/[A-Z]/.test(password)) {
+                score++;
+                updateCheck(upperCheck, true);
+            } else {
+                updateCheck(upperCheck, false);
+            }
+            
+            // Check number
+            if (/\d/.test(password)) {
+                score++;
+                updateCheck(numberCheck, true);
+            } else {
+                updateCheck(numberCheck, false);
+            }
+            
+            // Check special character
+            if (/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+                score++;
+                updateCheck(specialCheck, true);
+            } else {
+                updateCheck(specialCheck, false);
+            }
+            
+            // Update strength indicator
+            const percentage = (score / 4) * 100;
+            strengthBar.style.width = percentage + '%';
+            
+            if (score === 0) {
+                strengthBar.className = 'bg-error-500 h-1 rounded-full transition-smooth';
+                strengthText.textContent = 'Weak';
+                strengthText.className = 'text-xs font-medium text-error-500';
+            } else if (score <= 2) {
+                strengthBar.className = 'bg-warning-500 h-1 rounded-full transition-smooth';
+                strengthText.textContent = 'Fair';
+                strengthText.className = 'text-xs font-medium text-warning-500';
+            } else if (score === 3) {
+                strengthBar.className = 'bg-accent-500 h-1 rounded-full transition-smooth';
+                strengthText.textContent = 'Good';
+                strengthText.className = 'text-xs font-medium text-accent-500';
+            } else {
+                strengthBar.className = 'bg-success-500 h-1 rounded-full transition-smooth';
+                strengthText.textContent = 'Strong';
+                strengthText.className = 'text-xs font-medium text-success-500';
+            }
+        }
+        
+        function updateCheck(element, isValid) {
+            const icon = element.querySelector('i');
+            if (isValid) {
+                icon.className = 'fas fa-check text-success-500 mr-1';
+            } else {
+                icon.className = 'fas fa-times text-error-500 mr-1';
+            }
+        }
+        
+        function validateField(field) {
+            const errorDiv = document.getElementById(field.name + 'Error');
+            const successDiv = document.getElementById(field.name + 'Success');
+            
+            if (!errorDiv) return;
+            
+            if (field.value.trim() === '') {
+                errorDiv.textContent = 'This field is required';
+                errorDiv.classList.remove('hidden');
+                if (successDiv) successDiv.classList.add('hidden');
+            } else if (field.type === 'email' && !isValidEmail(field.value)) {
+                errorDiv.textContent = 'Please enter a valid email address';
+                errorDiv.classList.remove('hidden');
+                if (successDiv) successDiv.classList.add('hidden');
+            } else {
+                errorDiv.classList.add('hidden');
+                if (successDiv) successDiv.classList.remove('hidden');
+            }
+        }
+        
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

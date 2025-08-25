@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Catalog - EduLearn Platform</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fedulearnp3259back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-surface min-h-screen">
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm border-b border-secondary-200 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="course_catalog.html" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-white text-sm"></i>
+                        </div>
+                        <span class="text-xl font-semibold text-text-primary">EduLearn</span>
+                    </a>
+                </div>
+                
+              
+                
+                <!-- User Actions -->
+                <div class="flex items-center space-x-4">
+                    <!-- User Menu -->
+                    <div class="relative">
+                        <button id="userMenuBtn" class="flex items-center space-x-2 text-secondary-600 hover:text-primary">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User Avatar" class="w-8 h-8 rounded-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        
+                        <!-- User Dropdown -->
+                        <div id="userDropdown" class="absolute right-0 top-full mt-2 w-48 bg-white border border-secondary-200 rounded-educational-lg shadow-educational-hover hidden z-50">
+                            <div class="p-2">
+                                <a href="javascript:void(0)" class="block px-3 py-2 text-sm text-text-primary hover:bg-secondary-50 rounded">
+                                    <i class="fas fa-user mr-2"></i>Profile
+                                </a>
+                              
+                                <div class="border-t border-secondary-200 my-1"></div>
+                                <a href="user_login.html" class="block px-3 py-2 text-sm text-text-primary hover:bg-secondary-50 rounded">
+                                    <i class="fas fa-sign-out-alt mr-2"></i>Sign Out
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <!-- Sort and Results Header -->
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
+            <div class="mb-4 sm:mb-0">
+                <h1 class="text-2xl font-bold text-text-primary">Course Catalog</h1>
+                
+            </div>
+            
+            <div class="flex items-center space-x-4">
+
+                <!-- View Toggle -->
+                
+            </div>
+        </div>
+        
+        <!-- Course Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6" id="courseGrid">
+            <!-- Course Card 1 -->
+            <div class="bg-white rounded-educational-lg shadow-educational hover:shadow-educational-hover transition-smooth overflow-hidden group">
+                <div class="relative">
+                    <img src="/Img/Networking.png" alt="JavaScript Fundamentals" class="w-full h-50 object-cover group-hover:scale-105 transition-slow" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    
+                 
+                    
+                </div>
+                
+                <div class="p-6">
+                 
+                    
+                    <h3 class="font-semibold text-text-primary mb-2 line-clamp-2">Networking</h3>
+                    
+                    <div class="flex items-center mb-3">
+                       
+                        <span class="text-sm text-text-secondary">Kunal Kushwaha</span>
+                    </div>
+                 
+                    
+                    <div class="flex items-center justify-between">
+                        <button onclick="window.open('networking.html' , '_blank')" class="bg-primary hover:bg-primary-700 text-white px-4 py-2 rounded-educational text-sm font-medium transition-smooth">
+                            Enroll
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Course Card 2 -->
+            <div class="bg-white rounded-educational-lg shadow-educational hover:shadow-educational-hover transition-smooth overflow-hidden group">
+                <div class="relative">
+                    <img src="/Img/Version Control.png" alt="Python for Data Science" class="w-full h-50 object-cover group-hover:scale-105 transition-slow" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                </div>
+                
+                <div class="p-6">
+                 
+                    
+                    <h3 class="font-semibold text-text-primary mb-2 line-clamp-2">Version Control</h3>
+                    
+                    <div class="flex items-center mb-3">
+                       
+                        <span class="text-sm text-text-secondary">Sarah Johnson</span>
+                    </div>
+                    
+                    <div class="flex items-center justify-between">
+                        
+                        <button onclick="window.open('version.html', '_blank');"  class="bg-primary hover:bg-primary-700 text-white px-4 py-2 rounded-educational text-sm font-medium transition-smooth">
+                           Enroll
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Course Card 3 -->
+            <div class="bg-white rounded-educational-lg shadow-educational hover:shadow-educational-hover transition-smooth overflow-hidden group">
+                <div class="relative">
+                    <img src="/Img/OS.png" alt="React Development" class="w-full h-50 object-cover group-hover:scale-105 transition-slow" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                </div>
+                
+                <div class="p-6">
+                    
+                    <h3 class="font-semibold text-text-primary mb-2 line-clamp-2">Operaring System</h3>
+                    
+                    <div class="flex items-center mb-3">
+                        <span class="text-sm text-text-secondary">Mike Chen</span>
+                    </div>
+                    
+                   
+                    <div class="flex items-center justify-between">
+                        
+                        <button onclick="window.open('networking.html' , '_blank')" class="bg-primary hover:bg-primary-700 text-white px-4 py-2 rounded-educational text-sm font-medium transition-smooth">
+                            Enroll
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Course Card 4 -->
+            <div class="bg-white rounded-educational-lg shadow-educational hover:shadow-educational-hover transition-smooth overflow-hidden group">
+                <div class="relative">
+                    <img src="/Img/DBMS.png" alt="UI/UX Design" class="w-full h-50 object-cover group-hover:scale-105 transition-slow" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                </div>
+                
+                <div class="p-6">
+                                
+                    <h3 class="font-semibold text-text-primary mb-2 line-clamp-2">DBMS</h3>
+                    
+                    <div class="flex items-center mb-3">
+                        <span class="text-sm text-text-secondary">Emma Wilson</span>
+                    </div>
+                    
+                    
+                    <div class="flex items-center justify-between">
+                       <button onclick="window.location.href='course_detail.html'" class="bg-primary hover:bg-primary-700 text-white px-4 py-2 rounded-educational text-sm font-medium transition-smooth">
+                            Enroll
+                        </button>
+                    </div>
+                        </div>
+            </div>
+            
+            <!-- Course Card 5 -->
+            <div class="bg-white rounded-educational-lg shadow-educational hover:shadow-educational-hover transition-smooth overflow-hidden group">
+                <div class="relative">
+                    <img src="/Img/Opps in java.png" alt="Node.js Backend" class="w-full h-50 object-cover group-hover:scale-105 transition-slow" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                </div>
+                
+                <div class="p-6">
+                    
+                    
+                    <h3 class="font-semibold text-text-primary mb-2 line-clamp-2">Oops in java</h3>
+                    
+                    <div class="flex items-center mb-3">
+                        <span class="text-sm text-text-secondary">David Brown</span>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <button onclick="window.location.href='course_detail.html'" class="bg-primary hover:bg-primary-700 text-white px-4 py-2 rounded-educational text-sm font-medium transition-smooth">
+                            Enroll
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Course Card 6 -->
+            <div class="bg-white rounded-educational-lg shadow-educational hover:shadow-educational-hover transition-smooth overflow-hidden group">
+                <div class="relative">
+                    <img src="/Img/Excel.png" alt="Mobile App Development" class="w-full h-50 object-cover group-hover:scale-105 transition-slow" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                </div>
+                
+                <div class="p-6">
+                    
+                    
+                    <h3 class="font-semibold text-text-primary mb-2 line-clamp-2">Excel</h3>
+                    
+                    <div class="flex items-center mb-3">
+                        <span class="text-sm text-text-secondary">Lisa Garcia</span>
+                    </div>                    
+                    <div class="flex items-center justify-between">
+                        
+                        <button onclick="window.location.href='course_detail.html'" class="bg-primary hover:bg-primary-700 text-white px-4 py-2 rounded-educational text-sm font-medium transition-smooth">
+                            Enroll
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        
+            
+    </main>
+
+    <!-- Course Preview Modal -->
+    <div id="previewModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-educational-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-lg font-semibold text-text-primary">Course Preview</h3>
+                    <button id="closePreviewBtn" class="text-secondary-400 hover:text-secondary-600">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                
+                <div class="space-y-4">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Course Preview" class="w-full h-48 object-cover rounded-educational" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    
+                    <h4 class="text-xl font-semibold text-text-primary">Complete JavaScript Course: From Zero to Expert</h4>
+                    
+                    <p class="text-text-secondary">Master JavaScript with the most complete course! Projects, challenges, final exam, ES6+, OOP, AJAX, Webpack</p>
+                    
+                    <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                        <span><i class="fas fa-clock mr-1"></i>12h 30m</span>
+                        <span><i class="fas fa-users mr-1"></i>15,234 students</span>
+                        <span><i class="fas fa-star text-accent mr-1"></i>4.8 (2,456 reviews)</span>
+                    </div>
+                    
+                    <div class="border-t border-secondary-200 pt-4">
+                        <h5 class="font-medium text-text-primary mb-2">What you'll learn:</h5>
+                        <ul class="space-y-1 text-sm text-text-secondary">
+                            <li><i class="fas fa-check text-success mr-2"></i>Modern JavaScript fundamentals</li>
+                            <li><i class="fas fa-check text-success mr-2"></i>ES6+ features and syntax</li>
+                            <li><i class="fas fa-check text-success mr-2"></i>Asynchronous JavaScript</li>
+                            <li><i class="fas fa-check text-success mr-2"></i>Real-world projects</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex items-center justify-between pt-4 border-t border-secondary-200">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-2xl font-bold text-text-primary">$89.99</span>
+                            <span class="text-sm text-text-secondary line-through">$199.99</span>
+                        </div>
+                        <button onclick="window.location.href='course_detail.html'" class="bg-primary hover:bg-primary-700 text-white px-6 py-2 rounded-educational font-medium transition-smooth">
+                            View Full Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-secondary-200 z-30">
+        <div class="grid grid-cols-4 h-16">
+            <a href="course_catalog.html" class="flex flex-col items-center justify-center text-primary">
+                <i class="fas fa-th-large text-lg mb-1"></i>
+                <span class="text-xs font-medium">Catalog</span>
+            </a>
+            <a href="javascript:void(0)" class="flex flex-col items-center justify-center text-secondary-400">
+                <i class="fas fa-play-circle text-lg mb-1"></i>
+                <span class="text-xs">My Learning</span>
+            </a>
+            <a href="javascript:void(0)" class="flex flex-col items-center justify-center text-secondary-400">
+                <i class="fas fa-bookmark text-lg mb-1"></i>
+                <span class="text-xs">Saved</span>
+            </a>
+            <a href="javascript:void(0)" class="flex flex-col items-center justify-center text-secondary-400">
+                <i class="fas fa-user text-lg mb-1"></i>
+                <span class="text-xs">Profile</span>
+            </a>
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Search functionality
+            const searchInput = document.getElementById('searchInput');
+            const searchSuggestions = document.getElementById('searchSuggestions');
+            const mobileSearchBtn = document.getElementById('mobileSearchBtn');
+            const mobileSearch = document.getElementById('mobileSearch');
+            
+            // Show search suggestions
+            searchInput?.addEventListener('focus', function() {
+                searchSuggestions.classList.remove('hidden');
+            });
+            
+            // Hide search suggestions when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!searchInput?.contains(e.target) && !searchSuggestions?.contains(e.target)) {
+                    searchSuggestions?.classList.add('hidden');
+                }
+            });
+            
+            // Mobile search toggle
+            mobileSearchBtn?.addEventListener('click', function() {
+                mobileSearch.classList.toggle('hidden');
+            });
+            
+            // User menu dropdown
+            const userMenuBtn = document.getElementById('userMenuBtn');
+            const userDropdown = document.getElementById('userDropdown');
+            
+            userMenuBtn?.addEventListener('click', function(e) {
+                e.stopPropagation();
+                userDropdown.classList.toggle('hidden');
+            });
+            
+            document.addEventListener('click', function() {
+                userDropdown?.classList.add('hidden');
+            });
+            
+            // Preview modal
+            const previewModal = document.getElementById('previewModal');
+            const closePreviewBtn = document.getElementById('closePreviewBtn');
+            
+            closePreviewBtn?.addEventListener('click', function() {
+                previewModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            });
+            
+            // Load more functionality
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            const loadMoreText = document.getElementById('loadMoreText');
+            const loadMoreSpinner = document.getElementById('loadMoreSpinner');
+            
+            loadMoreBtn?.addEventListener('click', function() {
+                // Show loading state
+                loadMoreText.textContent = 'Loading...';
+                loadMoreSpinner.classList.remove('hidden');
+                loadMoreBtn.disabled = true;
+                
+                // Simulate loading
+                setTimeout(() => {
+                    loadMoreText.textContent = 'Load More Courses';
+                    loadMoreSpinner.classList.add('hidden');
+                    loadMoreBtn.disabled = false;
+                    
+                    // Here you would typically load more courses
+                    console.log('Loading more courses...');
+                }, 1500);
+            });
+            
+            // Bookmark functionality
+            const bookmarkBtns = document.querySelectorAll('.fa-bookmark');
+            bookmarkBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    if (this.classList.contains('fas')) {
+                        this.classList.remove('fas');
+                        this.classList.add('far');
+                        this.parentElement.classList.remove('text-accent');
+                        this.parentElement.classList.add('text-secondary-600');
+                    } else {
+                        this.classList.remove('far');
+                        this.classList.add('fas');
+                        this.parentElement.classList.remove('text-secondary-600');
+                        this.parentElement.classList.add('text-accent');
+                    }
+                });
+            });
+            
+            // Infinite scroll simulation
+            let isLoading = false;
+            
+            window.addEventListener('scroll', function() {
+                if (isLoading) return;
+                
+                const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+                
+                if (scrollTop + clientHeight >= scrollHeight - 1000) {
+                    isLoading = true;
+                    
+                    // Show skeleton loading
+                    setTimeout(() => {
+                        isLoading = false;
+                        console.log('Loaded more courses via infinite scroll');
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
