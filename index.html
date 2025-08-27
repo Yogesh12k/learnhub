@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduLearn Platform - Transform Your Future Through Learning</title>
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/main.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fedulearnp3259back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+    
+     <script src="https://kit.fontawesome.com/0f6eb807f3.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-educational min-h-screen">
     <!-- Header Navigation -->
@@ -15,7 +16,7 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex items-center">
-                    <a href="home_page.html" class="flex items-center space-x-2">
+                    <a href="index.html" class="flex items-center space-x-2">
                         <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                             <i class="fas fa-graduation-cap text-white text-sm"></i>
                         </div>
@@ -25,10 +26,10 @@
                 
                 <!-- Navigation Links (Desktop) -->
                 <nav class="hidden md:flex items-center space-x-8">
-                    <a href="home_page.html" class="text-primary font-medium">Home</a>
+                    <a href="#home" class="text-primary font-medium">Home</a>
                     <a href="/pages/course_catalog.html" target="_blank" class="text-text-secondary hover:text-primary transition-micro">Courses</a>
-                    <a href="#" class="text-text-secondary hover:text-primary transition-micro">About</a>
-                    <a href="#" class="text-text-secondary hover:text-primary transition-micro">Contact</a>
+                    <a href="#aboutUs" class="text-text-secondary hover:text-primary transition-micro">About</a>
+                    <a href="#contactUs" class="text-text-secondary hover:text-primary transition-micro">Contact</a>
                 </nav>
                 
                 <!-- User Actions -->
@@ -40,7 +41,7 @@
                     
                     <!-- Auth Buttons -->
                     <div class="hidden md:flex items-center space-x-3">
-                        <a href="user_login.html" class="text-text-secondary hover:text-primary font-medium transition-micro">Sign In</a>
+                        <a href="/pages/user_login.html" class="text-text-secondary hover:text-primary font-medium transition-micro">Sign In</a>
                         <a href="/pages/course_catalog.html" target="_blank" class="bg-primary hover:bg-primary-700 text-white px-4 py-2 rounded-educational text-sm font-medium transition-micro">Get Started</a>
                     </div>
                 </div>
@@ -48,6 +49,7 @@
         </div>
         
         <!-- Mobile Navigation -->
+         
         <div id="mobileMenu" class="md:hidden border-t border-secondary-200 bg-white hidden">
             <div class="px-4 py-3 space-y-3">
                 <a href="home_page.html" class="block text-primary font-medium">Home</a>
@@ -55,7 +57,7 @@
                 <a href="#" class="block text-text-secondary">About</a>
                 <a href="#" class="block text-text-secondary">Contact</a>
                 <div class="border-t border-secondary-200 pt-3 mt-3 space-y-3">
-                    <a href="user_login.html" class="block text-text-secondary">Sign In</a>
+                    <a href="/pages/user_login.html" class="block text-text-secondary">Sign In</a>
                     <a href="user_registration.html" class="block bg-primary text-white text-center py-2 rounded-educational font-medium">Get Started</a>
                 </div>
             </div>
@@ -63,7 +65,7 @@
     </header>
 
     <!-- Hero Section with Video Background -->
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <!-- Video Background -->
         <div class="absolute inset-0 w-full h-full">
             <div class="absolute inset-0 bg-gradient-to-r from-primary-900/90 via-primary-800/80 to-primary-700/90 z-10"></div>            
@@ -109,7 +111,7 @@
 
 
     <!-- Key Features Section -->
-    <section class="py-20 bg-surface">
+    <section id="aboutUs" class="py-20 bg-surface">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-4">Why Choose EduLearn?</h2>
@@ -233,7 +235,7 @@
     </section>
 
     <!-- Newsletter Signup -->
-    <section class="py-20 bg-primary-900 text-white">
+    <section id="contactUs" class="py-20 bg-primary-900 text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="mb-8">
                 <i class="fas fa-envelope text-4xl text-accent-400 mb-4"></i>
